@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 
 // Postgres Cleint Setup
 const { Pool } = require('pg');
